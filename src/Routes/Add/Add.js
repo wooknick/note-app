@@ -28,7 +28,7 @@ export default class Edit extends React.Component {
         } = this.props;
         if (title !== "" && content !== "") {
             this.createNote({ variables: { title, content } });
-            push("/");
+            push("/note-app/");
         }
     };
 }
